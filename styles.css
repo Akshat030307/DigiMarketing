@@ -1227,3 +1227,193 @@ h2 {
 .poster-display{
   background-color: white;
 }
+@media (max-width: 992px) {
+  .hero-heading {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  
+  .content-design-section {
+    flex-direction: column;
+  }
+  
+  .left-content, 
+  .right-images {
+    max-width: 100%;
+  }
+  
+  .right-images {
+    margin-top: 30px;
+  }
+  
+  .container2 {
+    flex-direction: column;
+  }
+  
+  .right-column {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+  
+  .frame-container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .overlay-gif {
+    left: 25%;
+    top: -100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-heading {
+    font-size: 2.5rem;
+    padding-left: 20px;
+    line-height: 1.1;
+  }
+  
+  .hero-subheading {
+    font-size: 1.1rem;
+    padding-left: 30px;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    margin-left: 30px;
+  }
+  
+  .team-photo img {
+    margin-left: 100px;
+    max-width: 70%;
+  }
+  
+  .heading2 {
+    font-size: 50px;
+  }
+  
+  .list-item {
+    margin-left: 30px;
+    font-size: 18px;
+  }
+  
+  h1, h2 {
+    margin-left: 30px;
+  }
+  
+  .integral, 
+  .description {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .left-text h2 {
+    font-size: 50px;
+  }
+  
+  .right-content p {
+    margin-left: 30px;
+    font-size: 16px;
+  }
+  
+  .bottom-img {
+    margin-left: 30px;
+  }
+  
+  .core-values h1 {
+    font-size: 50px;
+  }
+  
+  .value-card {
+    padding: 30px;
+  }
+  
+  .frame-container {
+    margin-top: 100px;
+  }
+  
+  .overlay-gif {
+    top: -80%;
+    left: 20%;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-heading {
+    font-size: 2rem;
+  }
+  
+  .nav-container {
+    padding: 15px 20px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    margin-left: 20px;
+  }
+  
+  .stats {
+    gap: 30px;
+  }
+  
+  .team-photo img {
+    margin-left: 50px;
+    max-width: 80%;
+  }
+  
+  .heading2 {
+    font-size: 36px;
+  }
+  
+  .list-item {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+  
+  .plus-sign, 
+  .minus-sign {
+    font-size: 20px;
+  }
+  
+  .core-values h1 {
+    font-size: 36px;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .frame-container {
+    margin-top: 70px;
+    width: 95%;
+  }
+  
+  .overlay-gif {
+    display: none; /* Hide on very small screens */
+  }
+  
+  .hero456 {
+    height: 80vh;
+  }
+  
+  .hero-text {
+    padding-left: 20px;
+    font-size: 2.5rem;
+  }
+  
+  .left-text h2 {
+    font-size: 36px;
+  }
+  
+  .right-content p {
+    margin-left: 20px;
+    font-size: 14px;
+  }
+  
+  .bottom-img {
+    margin-left: 20px;
+    width: 90%;
+  }
+}
+
