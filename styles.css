@@ -1524,3 +1524,133 @@ img {
     font-size: 14px;
   }
 }
+/* Add these responsive fixes at the end of your CSS */
+
+/* 1. Base mobile fixes to prevent overflow */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* 2. Mobile navbar fixes */
+@media (max-width: 768px) {
+  .navbar {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    padding: 10px 0;
+  }
+  
+  .nav-container {
+    padding: 0 15px;
+  }
+  
+  .hero {
+    padding-top: 60px;
+  }
+  
+  /* Mobile menu toggle */
+  .nav-links {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    padding: 15px 0;
+    display: none;
+  }
+  
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+/* 3. Content containment for mobile */
+@media (max-width: 768px) {
+  .hero-content,
+  .about-section,
+  .content-design-section,
+  .clients-section,
+  .case-studies,
+  .contact-section,
+  .footer {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* Force full width containment */
+  .hero-heading,
+  .hero-subheading,
+  .section-title,
+  .team-photo img,
+  .heading2,
+  h1, h2,
+  .description,
+  .integral,
+  .list-item {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+  
+  /* Center aligned elements */
+  .team-photo img {
+    margin: 0 auto;
+    display: block;
+    float: none;
+  }
+  
+  /* Stack flex containers */
+  .container2,
+  .advertising,
+  .approach-content,
+  .success-section {
+    flex-direction: column;
+  }
+  
+  /* Full width for child elements */
+  .left-column,
+  .right-column,
+  .left,
+  .right,
+  .left-text,
+  .right-content {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  /* Adjust absolute positioned elements */
+  .overlay-gif {
+    display: none; /* Hide on mobile to prevent overflow */
+  }
+  
+  /* Full width for form elements */
+  input, textarea {
+    width: 100% !important;
+  }
+  
+  /* Contain wide elements */
+  .frame-container {
+    width: 100%;
+    margin-left: 0;
+    transform: scale(0.9);
+  }
+}
+
+/* 4. Prevent horizontal scroll on all devices */
+body {
+  position: relative;
+}
+
+/* 5. JavaScript toggle for mobile menu */
+/* Add this script before </body> */
+<script>
+  document.querySelector('.hamburger').addEventListener('click', function() {
+    document.querySelector('.nav-links').classList.toggle('active');
+  });
+</script>
